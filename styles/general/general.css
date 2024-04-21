@@ -1,0 +1,40 @@
+body {
+  margin-top: 80px;
+  background-color: rgb(247, 246, 246);
+  font-family: bebas neue, Arial;
+  letter-spacing: 2px;
+  line-height:1.8em;
+}
+
+label {
+  text-align: left;
+  margin-top: 8px;
+  height: fit-content;
+}
+
+span {
+  color: rgb(211, 62, 62);
+}
+
+h1{
+  font-size: 36px;
+  text-align: center;
+  margin: 0 auto 30px auto;
+  padding: 10px 20px;
+}
+
+h2 {
+  font-size: 26px;
+  margin-bottom: 10px;
+  padding: 0px 7px;
+  width: fit-content;
+  background-color: rgb(91, 149, 231);
+  box-shadow: -4px 4px rgb(168, 204, 255, 0.8);
+}
+
+h1, 
+h2 {
+  background-color: rgb(168, 204, 255);
+  color: white;
+  margin: 15px 20px;
+}
