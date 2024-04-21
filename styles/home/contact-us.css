@@ -1,0 +1,186 @@
+body {
+  margin-bottom: 100px;
+}
+
+.contact-us-form {
+  display: grid;
+  margin: 0px 10px;
+  max-width: 645px;
+}
+
+.required{
+  display: flex;
+  justify-content: right;
+  margin-right: 1px;
+}
+
+input{
+  border-radius: 2px;
+  border-color: black;
+  border-width: 1px;  
+  height: 30px;
+}
+
+
+.sub-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.col-1,
+.col-2 {
+  display: grid;
+  margin: 0px;
+}
+
+.col-1 {
+  margin-right: 5px;
+}
+
+.col-2 {
+  margin-left: 5px;
+}
+
+.message {
+  height: 60px;
+  max-width: calc(100%);  
+  max-height: 200px; 
+}
+
+
+.submit-btn-container {
+  display: flex;
+  margin: 10px 0px;
+  height: 35px;
+  justify-content: right;
+}
+
+.submit-btn {
+  border-width: 1px;
+  border-radius: 2px;
+  width: 110px;
+  background-color: rgb(255, 255, 255);
+  transition: opacity 0.15s;
+  background-color: rgb(168, 204, 255);
+  color: white;
+  margin-top: 10px;
+  height: 40px;
+  justify-self: right;
+}
+
+.submit-btn:hover {
+  opacity: 0.9;
+}
+
+.submit-btn:active {
+  opacity: 0.6;
+}
+
+.information {
+  padding: 0px;
+  margin-bottom: 20px; 
+}
+
+.information-container{
+  margin: 0px 10px;
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  height: 300px;
+}
+
+.information-right-col {
+  margin-left: 30px;
+}
+
+.information-left-col {
+  background-image: url(../../icons/happy-dog.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: calc(50%);
+}
+
+.information, 
+.contact-us-container {
+  height: fit-content;
+}
+
+.information h1, 
+.contact-us-container h1 {
+  position: relative;
+  top:0;
+  margin: 0px;
+  margin-bottom: 10px;
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  display: none;
+}
+
+.popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f0eded;
+  border: 2px solid rgb(106, 167, 252);
+  padding: 20px;
+  max-width: 400px;
+  text-align: center;
+}
+
+.popup h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: rgb(106, 167, 252);
+  box-shadow: none;
+  background-color: #f0eded;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  color: #999;
+  cursor: pointer;
+}
+
+@media (max-width: 550px) {
+  .information-container {
+    grid-template-columns: 403px;
+    height: fit-content;
+  }
+
+  .information-left-col {
+    height: 300px;
+    margin: 0px;
+    margin-bottom: 20px;
+    width: 100%;
+    background-size: 300px;
+    border-radius: 50%;
+  }
+
+  .information-right-col {
+    margin: 0px;
+    height: fit-content;
+  }
+}
+
+@media(min-width:1000px) {  
+  .information,
+  .contact-us-container {
+    margin: 0 auto;
+    min-width: 965px;
+    max-width: 75%;
+  }
+}

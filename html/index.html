@@ -1,0 +1,120 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Home</title>
+    <link rel="stylesheet" href="../styles/general/general.css">
+    <link rel="stylesheet" href="../styles/general/header.css">
+    <link rel="stylesheet" href="../styles/home/home.css">
+    <link rel="stylesheet" href="../styles/home/contact-us.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="description" content="Lopez Landscaping Website">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Victor Perez Contreras">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  
+  <body>
+    <nav id="nav">
+      <div class="header-left-col" id="header-left-col">
+        <a href="services.html#">Services</a>
+        <a href="testimonial.html#">Testimonials</a>
+      </div>
+      <a href="index.html#" class="header-title" id="header-title">Lopez Landscape</a>
+      <div class="header-right-col" id="header-right-col">
+        <a href="contact-us.html#">Contact Us</a>
+        <a onclick="openMenu()">Menu</a>
+      </div>
+      <div onclick="openMenu()" class="menu-btn" id="menu-btn"></div>
+      <ul id="menu" class="menu">
+        <li><a href="services.html#">Services</a></li>
+        <li><a href="testimonial.html#">Testimonials</a></li>
+        <li><a href="contact-us.html#">Contact Us</a></li>
+      </ul>
+    </nav>
+   
+    <div class="parallax">
+      <meta name="description" content="Photo by David Bartus: https://www.pexels.com/photo/photo-lavender-flower-field-under-pink-sky-1166209/">
+      <div class="img">
+        <h2>Vibrant</h2>
+      </div>
+      <meta name="description" content="Photo by Karolina Grabowska: https://www.pexels.com/photo/close-up-photo-of-hose-watering-a-plant-4207906/">
+      <div class="img">
+        <h2>Irrigation</h2>
+      </div>
+      <meta name="description" content="Photo by Quang Nguyen Vinh: https://www.pexels.com/photo/man-spraying-water-on-orange-flowers-2134798/">
+      <div class="img">
+        <h2>Watering</h2>
+      </div>
+      <meta name="description" content="Photo by Pixabay: https://www.pexels.com/photo/man-in-white-tank-top-and-blue-denim-pants-with-leaf-blower-outdoors-during-daytime-162564/">
+      <div class="img">
+        <h2>Clean</h2>
+      </div>
+    </div>
+    
+    <div class="information">
+      <h1>Information</h1>
+      <div class="information-container">
+        <div class="information-left-col"></div> 
+        <div class="information-right-col">
+          <div><b>Email: </b>lopezlandscape.app@gmail.com</div>
+          <div><b>Phone: </b>(124)456-7890</div>
+          <div><b>Located: </b>South Bay Area</div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="contact-us-container">
+      <h1>Contact Us</h1>
+      <form class="contact-us-form" 
+        action="https://sheetdb.io/api/v1/d45sq3ogukswr"
+        method="POST" 
+        id="sheetdb-form"
+        >
+        
+        <div class="required"><span>*</span>required</div>
+  
+        <label>Name<span>*</span></label>
+        <input name="data[Name]" placeholder="Enter your full name" id="name">
+        
+        <div class="sub-row">
+          <div class="col-1">
+            <label>Phone<span>*</span></label>
+            <input name="data[Phone]" placeholder="Enter your phone number" id="phone">  
+          </div>
+          <div class="col-2">
+            <label>Email<span>*</span></label>
+            <input name="data[Email]" placeholder="Enter your email" id="email">  
+          </div>
+        </div>
+  
+        <label>Address</label>
+        <input name="data[Address]" placeholder="Enter your address" id="address">
+  
+        <label>Subject</label>
+        <input name="data[Subject]" placeholder="Type the subject" id="subject">
+        
+        <label>Message</label>
+        <input name="data[Message]" 
+          placeholder="Type your message here..." 
+          id="message">
+        
+        <button id="submit-btn" class="submit-btn" type="submit">Submit</button>
+      </form>
+    </div>
+    
+    <div class="overlay" id="overlay">
+      <div class="popup">
+        <span class="close-btn" onclick="closePopup()">&times;</span>
+        <h2>The message was sent successfully.</h2>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="../scripts/home.js"></script>
+    <script type="text/javascript" src="../scripts/header.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
+  </body>
+</html>
+ 
